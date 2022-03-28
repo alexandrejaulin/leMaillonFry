@@ -1,0 +1,112 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-row{
+
+  align-items: center;
+  justify-content: center;
+}
+
+ion-grid{
+
+  align-items: center;
+  justify-content: center;
+}
+
+.superposegros{
+  z-index: 1;
+  scale:2.9;
+  top: 25px;
+  left: 98px;
+  font-family: mont;
+  position: absolute;
+}
+
+.superpose{
+  z-index: 1;
+  scale: 2.4;
+  top: 14px;
+  left: 84px;
+  font-family: mont;
+  text-align: center;
+  position: absolute;
+}
+
+.lancerpartie{
+  top: 870px;
+  left: 600px;
+  position: absolute;
+}
+
+.lancerpartietext{
+  top: 885px;
+  left: 720px;
+  scale: 2;
+  font-family: mont;
+  text-align: center;
+  position: absolute;
+}
+
+.timer{
+  top: 870px;
+  left: 1600px;
+  position: absolute;
+}
+
+.timertext{
+  top: 884px;
+  left: 1683px;
+  scale: 3;
+  font-family: mont;
+  text-align: center;
+  position: absolute;
+}
+
+.megaTotal{
+  top: 14px;
+  left: 1600px;
+  position: absolute;
+}
+
+.megaTotaltext{
+  top: 50px;
+  left: 1730px;
+  scale: 3;
+  font-family: mont;
+  text-align: center;
+  position: absolute;
+}
+
+.megaTotalLabel{
+  top: 150px;
+  left: 1720px;
+  scale: 3;
+  font-family: mont;
+  text-align: center;
+  position: absolute;
+}

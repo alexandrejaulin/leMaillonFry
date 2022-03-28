@@ -1,0 +1,100 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <ion-content>
+    <ion-grid>
+  
+      <ion-row>
+        <ion-col>
+          <img id="image2000" src="assets/gros-maillon-bleu.png" style="width : 12% ; height : 90%">
+          <p class="superposegros">2 000 €</p>
+        </ion-col>
+      </ion-row>  
+
+      <ion-row>
+        <ion-col>
+          <img id="image1600" src="assets/maillon-bleu.png" style="width : 10% ; height : 90%">
+          <p class="superpose">1 600</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img id="image1200" src="assets/maillon-bleu.png" style="width : 10% ; height : 90%">
+          <p class="superpose">1 200</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img id="image900" src="assets/maillon-bleu.png" style="width : 10% ; height : 90%">
+          <p class="superpose">900</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img id="image600" src="assets/maillon-bleu.png" style="width : 10% ; height : 90%">
+          <p class="superpose">600</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img id="image300" src="assets/maillon-bleu.png" style="width : 10% ; height : 90%">
+          <p class="superpose">300</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img id="image200" src="assets/maillon-bleu.png" style="width : 10% ; height : 90%">
+          <p class="superpose">200</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img id="image100" src="assets/maillon-bleu.png" style="width : 10% ; height : 90%">
+          <p class="superpose">100</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+
+        <ion-col>
+          <img id="image50" src="assets/maillon-bleu.png" style="width : 10% ; height : 90%">
+          <p class="superpose">50</p>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="assets/banque.png" style="width : 10% ; height : 90%">
+          <p id="banque" class="superpose">0 €</p>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+
+      <div>
+        <img (click)="lancerMusique()" class="lancerpartie" src="assets/maillon-bleu.png" style="width : 20% ; height : 10%">
+        <p (click)="lancerMusique()" class="lancerpartietext">Manche suivante</p>
+      </div>
+    
+      <div>
+        <img class="timer" src="assets/maillon-bleu.png" style="width : 10% ; height : 10%">
+        <p *ngIf="countdownDisplay" class="timertext">{{countdownDisplay}}</p>
+      </div>
+
+      <div>
+        <img class="megaTotal" src="assets/maillon-bleu.png" style="width : 15% ; height : 15%">
+        <p id="total" class="megaTotaltext">0 €</p>
+        <p class="megaTotalLabel">TOTAL</p>
+      </div>
+   
+  </ion-content>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "maillon-faible",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
