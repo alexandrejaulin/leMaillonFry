@@ -67,6 +67,16 @@ export class HomePage {
         this.audioVote.currentTime = 0;
         this.audioGeneral.play();
         break;
+      case "l":
+        this.audioVote.pause();
+        this.audioVote.currentTime = 0;
+        this.audioGeneral.pause();
+        this.audioGeneral.currentTime = 0;
+        let audio = new Audio();
+        audio.src = "assets/son/loser.wav";
+        audio.load();
+        audio.play();
+        break;
       case "v":
         this.audioGeneral.pause();
         this.audioGeneral.currentTime = 0;
