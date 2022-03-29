@@ -39,10 +39,10 @@ export class HomePage {
     
 
     this.partieEstEnCours = false;
-    this.secs = 150;
+    this.secs = 155;
     this.countdownDisplay = "2:30";
     this.valeurMaillon = [50, 100, 200, 300, 600, 900, 1200, 1600, 2000];
-    this.megaTotal = 500;
+    this.megaTotal = 0;
 
     document.addEventListener("keydown",(e:KeyboardEvent) => {this.onKeyboardPressEvent(e)});
   }
