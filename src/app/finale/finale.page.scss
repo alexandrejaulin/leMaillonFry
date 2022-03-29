@@ -1,0 +1,63 @@
+.megaTotal{
+    top: 14px;
+    left: 1600px;
+    position: absolute;
+  }
+  
+  .megaTotaltext{
+    top: 50px;
+    left: 1730px;
+    scale: 3;
+    font-family: mont;
+    text-align: center;
+    position: absolute;
+  }
+  
+  .megaTotalLabel{
+    top: 150px;
+    left: 1720px;
+    scale: 3;
+    font-family: mont;
+    text-align: center;
+    position: absolute;
+  }
+
+  .joueur1{
+    top: 500px;
+    left: 100px;
+    position: absolute;
+  }
+  
+  .joueur1text{
+    top: 480px;
+    left: 180px;
+    scale: 3;
+    font-family: mont;
+    text-align: center;
+    position: absolute;
+  }
+
+  .joueur2{
+    top: 700px;
+    left: 100px;
+    position: absolute;
+  }
+  
+  .joueur2text{
+    top: 680px;
+    left: 180px;
+    scale: 3;
+    font-family: mont;
+    text-align: center;
+    position: absolute;
+  }
+
+  .grid{
+    top: 390px;
+    left: 520px;
+    position: absolute;
+  }
+
+  ion-row{
+    margin: 11%;
+  }

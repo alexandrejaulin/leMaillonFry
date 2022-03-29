@@ -7,9 +7,17 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'finale',
+    loadChildren: () => import('./finale/finale.module').then( m => m.FinalePageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'finale',
+    loadChildren: () => import('./finale/finale.module').then( m => m.FinalePageModule)
   },
 ];
 

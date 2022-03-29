@@ -4,6 +4,7 @@ import {FormControl} from "@angular/forms";
 import {interval, Subject} from "rxjs";
 import {map, takeUntil, takeWhile} from "rxjs/operators";
 import {addSeconds, format} from "date-fns";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -28,7 +29,7 @@ export class HomePage {
   audioGeneral: HTMLAudioElement;
   audioVote: HTMLAudioElement;
 
-  constructor() {
+  constructor(private router: Router) {
     this.audioGeneral = new Audio();
     this.audioVote = new Audio();
     this.audioGeneral.src = "assets/son/general.wav";
@@ -38,10 +39,10 @@ export class HomePage {
     
 
     this.partieEstEnCours = false;
-    this.secs = 155;
+    this.secs = 10;
     this.countdownDisplay = "2:30";
     this.valeurMaillon = [50, 100, 200, 300, 600, 900, 1200, 1600, 2000];
-    this.megaTotal = 0;
+    this.megaTotal = 500;
 
     document.addEventListener("keydown",(e:KeyboardEvent) => {this.onKeyboardPressEvent(e)});
   }
@@ -62,12 +63,12 @@ export class HomePage {
         console.log("BANQUE");
         this.banque();
         break;
-      case "g":
+      case "&":
         this.audioVote.pause();
         this.audioVote.currentTime = 0;
         this.audioGeneral.play();
         break;
-      case "l":
+      case '"':
         this.audioVote.pause();
         this.audioVote.currentTime = 0;
         this.audioGeneral.pause();
@@ -77,10 +78,17 @@ export class HomePage {
         audio.load();
         audio.play();
         break;
-      case "v":
+      case "é":
         this.audioGeneral.pause();
         this.audioGeneral.currentTime = 0;
         this.audioVote.play();
+        break;
+      case "²":
+        this.audioVote.pause();
+        this.audioVote.currentTime = 0;
+        this.audioGeneral.pause();
+        this.audioGeneral.currentTime = 0;
+        this.router.navigate(['finale', { megaTotal: this.megaTotal }]);
     }
 
     console.log(`Key pressed: ${event.key}`);
